@@ -1,0 +1,566 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: black;
+
+  
+} 
+
+/* header navbar*/
+header {
+  position: relative;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.menu a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  position :relative;
+}
+.menu a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.menu a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.header {
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  padding-top: 20px;
+
+}
+
+.header ul {
+  display: inline-flex;
+  margin: 10;
+  padding: 90;
+  list-style: none;
+  overflow: hidden;
+}
+
+
+/* menu */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 0px 15px;
+  }
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+
+  }
+  
+}
+
+/*video header*/
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (pointer: coarse) and (hover: none) {
+
+  header {
+    background: url("spaceship.mp4") black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/*SPACEY PRESENTATION*/
+
+.SPACEY {
+
+    padding: 5rem;
+    display:table-cell;
+}
+
+#SPACEY {
+
+  font-size: 30px;
+  flex: 1 1 auto;
+  font-weight: 500;
+}
+
+.SPACEY p {
+  font-weight:100;
+  padding-right: 40em;
+  min-height: 10em;
+}
+
+.astroimage {
+  height: 90vh;
+  width:auto;
+  float:right;
+}
+
+/* GRAVITY PRESENTATION */
+
+.gravity {
+  padding: 5rem;
+
+}
+
+#GRAVITY  {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.gravity p {
+  font-weight:100;
+  min-height: 10em;
+}
+
+/* ICONES */
+
+.icone{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+
+}
+.picto img{
+  width:100px;
+  margin-bottom: 30px;
+
+}
+
+
+.picto{
+  margin:50px;
+
+
+}
+.picto p{
+  font-weight: 400;
+}
+
+/* Destinations */
+
+.destinations {
+  padding: 5rem;
+  margin: -80px;
+
+}
+
+#DESTINATIONS {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/*JUPITER*/
+.jupitergauche{
+    float: left;
+    width: 40%;
+    margin-left: -130px; 
+}
+ 
+.jupiter{
+    padding: 10px;
+}
+ 
+.jupiterdroite {
+  margin-top : 150px;
+
+}
+
+.jupiterdroite h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jupiterdroite h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.jupiterdroite p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*MARS*/
+.marsdroite{
+    float: right;
+    width: 40%;
+    margin-right: -130px; 
+}
+ 
+.mars{
+    padding: 10px;
+}
+ 
+.marsgauche {
+  margin-top : 150px;
+  align-items: center;
+  text-align: right;
+
+}
+
+.marsgauche h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.marsgauche h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.marsgauche p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*MERCURE*/
+.mercuregauche{
+    float: left;
+    width: 40%;
+
+}
+ 
+.mercure{
+    padding: 10px;
+}
+ 
+.mercuredroite {
+  margin-top : 150px;
+   text-align: left;
+
+}
+
+.mercuredroite h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mercuredroite h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mercuredroite p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*NEPTUNE*/
+.neptunedroite{
+    float: right;
+    width: 40%;
+    margin-right: -130px; 
+}
+ 
+.neptune{
+    padding: 10px;
+}
+ 
+.neptunegauche {
+  margin-top : 150px;
+  align-items: center;
+  text-align: right;
+
+}
+
+.neptunegauche h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.neptunegauche h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.neptunegauche p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*SATURNE*/
+.saturnegauche{
+    float: left;
+    width: 50%;
+    margin-left: -170px;
+}
+ 
+.saturne{
+    padding: 10px;
+}
+ 
+.saturnedroite {
+  margin-top : 150px;
+   text-align: left;
+
+}
+
+.saturnedroite h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.saturnedroite h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.saturnedroite p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*URANUS*/
+.uranusdroite{
+    float: right;
+    width: 40%;
+    margin-right: -130px; 
+  }
+ 
+.uranus{
+    padding: 10px;
+}
+ 
+.uranusgauche {
+  margin-top : 150px;
+  align-items: center;
+  text-align: right;
+
+}
+
+.uranusgauche h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.uranusgauche h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.uranusgauche p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*VENUS*/
+.venusgauche{
+    float: left;
+    width: 40%;
+    margin-left: -130px;
+}
+ 
+.venus{
+    padding: 10px;
+}
+ 
+.venusdroite {
+  margin-top : 150px;
+   text-align: left;
+
+}
+
+.venusdroite h3 {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.venusdroite h2 {
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.venusdroite p {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* NOS OFFRES */
+
+.formules {
+  padding: 5rem;
+}
+
+#OFFRES {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.card {
+background-color: #000;
+margin-top: 110px;
+justify-content: space-around;
+margin-left: 40px; 
+margin-right: 40px; 
+width: 100%;
+}
+
+
+/* CONTACT */
+
+iframe {
+  margin-top: -90px;
+  float: left;
+}
+
+.infocontact {
+float: right;
+margin-right: 150px;
+margin-top: 5px;
+font-size: 15px;
+font-weight: 100;
+
+}
+
+/*footer*/
+.footer-basic {
+  margin-top: 400px;
+  margin-bottom:0;
+  padding-bottom: 0;
+  justify-content: center;
+  color:#FFF;
+  position: relative;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:white;
+  text-decoration:none;
+  opacity:1;
+  word-spacing: 5px;
+}
+
+.footer-basic ul a:hover {
+  color:grey;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+  color: white;
+}
+
+.footer-basic .social > a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:#FFF;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#FFF;
+  margin-bottom:0;
+}
+
+
+
+
+
